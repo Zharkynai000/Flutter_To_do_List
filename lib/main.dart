@@ -9,10 +9,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const color = Color.fromARGB(235, 43, 65, 175);
     return MaterialApp(
       home: HomeScreen(),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.indigo),
+      theme: ThemeData(primarySwatch: Colors.blue),
     );
   }
 }
@@ -54,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
           "Todo Application",
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 25,
+            fontSize: 25
           ),
         ),
         centerTitle: true,
@@ -78,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       ),
-                      color: Colors.blue[900],
+                      color: const Color.fromARGB(255, 33, 57, 92),
                       child: SizedBox(
                         height: 50,
                         width: double.infinity,
@@ -138,7 +139,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                               fillColor: Colors.blue[300],
                               filled: true,
-                              labelText: 'Create Task....',
+                              labelText: 'Create Task...',
                               labelStyle: TextStyle(
                                 color: Colors.indigo[900],
                                 fontWeight: FontWeight.bold,
